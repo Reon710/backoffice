@@ -3,6 +3,8 @@ namespace Deployer;
 
 require 'recipe/laravel.php';
 
+set('application', 'backoffice');
+
 // Config
 
 set('repository', 'https://github.com/Reon710/backoffice.git');
