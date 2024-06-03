@@ -33,5 +33,4 @@ task('reload:php-fpm', function () {
 
 after('deploy:failed', 'deploy:unlock');
 after('deploy', 'reload:php-fpm');
-
-// before('deploy:symlink', 'artisan:migrate');
+before('deploy:symlink', 'artisan:migrate');
